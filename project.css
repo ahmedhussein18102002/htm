@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.inpt,#submit{
+    align-items: center;
+    padding: 8px;
+    border-radius: 20px;
+    width: 75%;
+    margin: 5px;
+    margin-left: 20px;
+
+}
+.labl{
+    margin-left:10px ;
+    color: rgb(180, 120, 120);
+}
+.h-form,.f-form{
+    color: rgb(210, 42, 51);
+    text-align: center;
+    margin: 0;
+}
+legend{
+    color: rgb(210, 42, 51);
+
+}
+form{
+    
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.75rem;
+    border: 2px #735400 dashed;
+
+}
+
+#submit{
+    background-color:rgb(226, 173, 176);
+    border: 2px dashed rgb(145, 99, 99);
+    color: rgb(88, 77, 77);
+}
+aside{
+
+    background-color: antiquewhite;
+    grid-area: aside;
+
+}
+.h-body {
+
+    background-color: rgb(173, 93, 93);
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-areas: "logo logo logo logo nav nav nav nav nav nav ";
+}
+.body{
+    margin: auto;
+    display: grid;
+    height: 100vh;
+    background-color: #eee;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas:"header header header header header header header header header header " "aside aside section section section section section section section section " "footer footer footer footer footer footer footer footer footer footer" ;
+    
+}
+h2{
+    grid-area: logo;
+}
+nav{
+    grid-area: nav;
+}
+section{
+    grid-area: section;
+   
+}
+
+
+.f-body{
+   
+    grid-area: footer;
+
+}
+ul li{
+    display:inline;
+
+}
